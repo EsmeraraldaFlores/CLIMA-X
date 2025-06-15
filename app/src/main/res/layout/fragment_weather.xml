@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey">
+    android:background="@color/white">
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btMenuConfig"
@@ -49,7 +49,7 @@
         android:layout_width="164dp"
         android:layout_height="164dp"
         android:layout_marginTop="24dp"
-        android:src="@drawable/capibara"
+        android:src="@drawable/weather"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvDate" />

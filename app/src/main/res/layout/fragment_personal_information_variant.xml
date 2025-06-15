@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey">
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/tvWelcome"
@@ -112,7 +112,7 @@
         android:layout_marginBottom="8dp"
         android:checked="true"
         android:text="@string/referral_code"
-        app:buttonTint="@color/brown"
+        app:buttonTint="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/tfCode"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -146,7 +146,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/brown"
+        android:backgroundTint="@color/black"
         android:hint="@string/continue_button"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"

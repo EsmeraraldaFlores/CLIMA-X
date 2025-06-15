@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph2"
+    app:startDestination="@id/navigation_weather">
+    <fragment
+        android:id="@+id/navigation_weather"
+        android:name="com.example.staysunny.view.WeatherFragment"
+        android:label="@string/weather"
+        tools:layout="@layout/fragment_weather"/>
+    <fragment
+        android:id="@+id/navigation_forecast"
+        android:name="com.example.staysunny.view.WeatherWeekFragment"
+        android:label="@string/week_weather"
+        tools:layout="@layout/fragment_weather_week"/>
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.staysunny.view.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_personalInfoFragment"
+            app:destination="@id/personalInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalInfoFragment"
+        android:name="com.example.staysunny.view.PersonalInfoFragment"
+        android:label="PersonalInfoFragment"
+        tools:layout="@layout/fragment_personal_info">
+        <action
+            android:id="@+id/action_personalInfoFragment_to_profileFragment"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+</navigation>

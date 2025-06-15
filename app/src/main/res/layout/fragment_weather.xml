@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btMenuConfig"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/more_vert_24px"
+        android:contentDescription="@string/menu_button_description"
+        app:backgroundTint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/city"
+        android:textColor="@color/black"
+        android:textSize="44sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:text="@string/date"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvCity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ivWeather"
+        android:layout_width="164dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/capibara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDate" />
+
+    <TextView
+        android:id="@+id/tvCelsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/celsius"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivWeather" />
+
+    <TextView
+        android:id="@+id/tvGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:text="@string/greeting"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:textSize="32sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvCelsius"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ivHorizontal"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/remove_24px"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/ivWind"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvGreeting" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ivWind"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/air_24px"
+        app:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivHorizontal" />
+
+    <TextView
+        android:id="@+id/tvWind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:text="@string/wind"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/ivWind"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvWindInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/windInfo"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWind" />
+
+    <ImageView
+        android:id="@+id/ivVerticalOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/tvWindInfo"
+        app:layout_constraintEnd_toStartOf="@+id/tvWindInfo"
+        app:layout_constraintStart_toEndOf="@+id/tvSunriseInfo"
+        app:layout_constraintTop_toTopOf="@+id/tvWindInfo" />
+
+    <TextView
+        android:id="@+id/tvSunriseInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/hour"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivVerticalOne"
+        app:layout_constraintEnd_toStartOf="@+id/ivVerticalOne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivVerticalOne" />
+
+    <TextView
+        android:id="@+id/tvSunrise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/sunrise"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvSunriseInfo"
+        app:layout_constraintEnd_toEndOf="@+id/tvSunriseInfo"
+        app:layout_constraintStart_toStartOf="@+id/tvSunriseInfo" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ivSunrise"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/wb_twilight_24px"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tvSunrise"
+        app:layout_constraintEnd_toEndOf="@+id/tvSunrise"
+        app:layout_constraintStart_toStartOf="@+id/tvSunrise"/>
+
+
+    <ImageView
+        android:id="@+id/ivVerticalTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/tvWindInfo"
+        app:layout_constraintStart_toEndOf="@+id/tvWindInfo"
+        app:layout_constraintTop_toTopOf="@+id/tvWindInfo"
+        app:layout_constraintEnd_toStartOf="@+id/tvTempratureInfo"/>
+
+    <TextView
+        android:id="@+id/tvTempratureInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/tempratureInfo"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivVerticalTwo"
+        app:layout_constraintTop_toTopOf="@+id/ivVerticalTwo" />
+
+    <TextView
+        android:id="@+id/tvTemprature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/temprature"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvTempratureInfo"
+        app:layout_constraintEnd_toEndOf="@+id/tvTempratureInfo"
+        app:layout_constraintStart_toStartOf="@+id/tvTempratureInfo" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ivTemprature"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/device_thermostat_24px"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tvTemprature"
+        app:layout_constraintEnd_toEndOf="@+id/tvTemprature"
+        app:layout_constraintStart_toStartOf="@+id/tvTemprature"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

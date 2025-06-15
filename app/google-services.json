@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "500471775075",
+    "project_id": "stay-sunny",
+    "storage_bucket": "stay-sunny.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500471775075:android:f644a1e08cd3d2c5829d56",
+        "android_client_info": {
+          "package_name": "com.example.staysunny"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6UoSrKDgXjwXDFledLY-95TGUNlHCWl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

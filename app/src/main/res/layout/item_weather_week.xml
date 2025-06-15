@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="8dp"
+app:cardCornerRadius="8dp"
+app:cardElevation="4dp">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <!-- Weather Icon -->
+    <ImageView
+        android:id="@+id/ivWeatherIconWeek"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:scaleType="centerCrop"/>
+
+    <!-- Date -->
+    <TextView
+        android:id="@+id/tvDateWeek"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Monday, June 10"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/ivWeatherIconWeek"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="12dp"/>
+
+    <!-- Weather Condition -->
+    <TextView
+        android:id="@+id/tvWeatherConditionWeek"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Mostly cloudy"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/ivWeatherIconWeek"
+        app:layout_constraintTop_toBottomOf="@id/tvDateWeek"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="12dp"/>
+
+    <!-- Temperature -->
+    <TextView
+        android:id="@+id/tvCelsiusWeek"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="24°C"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/ivWeatherIconWeek"
+        app:layout_constraintTop_toBottomOf="@id/tvWeatherConditionWeek"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="12dp"/>
+
+    <!-- Wind -->
+    <TextView
+        android:id="@+id/tvWindInfoWeek"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Wind: 12 km/h"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/ivWeatherIconWeek"
+        app:layout_constraintTop_toBottomOf="@id/tvCelsiusWeek"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="12dp"/>
+
+    <!-- Rain Probability -->
+    <TextView
+        android:id="@+id/tvRainProbabilityWeek"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Rain probability: 30%"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/ivWeatherIconWeek"
+        app:layout_constraintTop_toBottomOf="@id/tvWindInfoWeek"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="12dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
